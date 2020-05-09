@@ -2,8 +2,8 @@
 {% set version = "0.4.8" %}
 
 package:
-  name: "{{ name|lower }}"
-  version: "{{ version }}"
+  name: {{ name|lower }}
+  version: {{ version }}
 
 source:
   url: "https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz"
@@ -14,7 +14,7 @@ build:
   entry_points:
     - geeadd=geeadd.geeadd:main
   noarch: python
-  script: "{{ PYTHON }} -m pip install . -vv"
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
@@ -35,13 +35,13 @@ test:
     - geeadd --help
 
 about:
-  home: "https://github.com/samapriya/gee_asset_manager_addon"
+  home: https://github.com/samapriya/gee_asset_manager_addon
   license: Apache Software
   license_family: APACHE
   license_file: LICENSE
-  summary: "Google Earth Engine Batch Assets Manager with Addons"
-  doc_url: "https://samapriya.github.io/gee_asset_manager_addon/"
-  dev_url: "https://github.com/samapriya/gee_asset_manager_addon"
+  summary: Google Earth Engine Batch Assets Manager with Addons
+  doc_url: https://samapriya.github.io/gee_asset_manager_addon/
+  dev_url: https://github.com/samapriya/gee_asset_manager_addon
 
 extra:
   recipe-maintainers:
