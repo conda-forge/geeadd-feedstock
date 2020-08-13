@@ -5,7 +5,7 @@ Home: https://github.com/samapriya/gee_asset_manager_addon
 
 Package license: Apache Software
 
-Feedstock license: BSD 3-Clause
+Feedstock license: BSD-3-Clause
 
 Summary: Google Earth Engine Batch Assets Manager with Addons
 
