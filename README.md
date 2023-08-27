@@ -1,11 +1,11 @@
-About geeadd
-============
+About geeadd-feedstock
+======================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/geeadd-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/samapriya/gee_asset_manager_addon
 
 Package license: Apache Software
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/geeadd-feedstock/blob/main/LICENSE.txt)
 
 Summary: Google Earth Engine Batch Assets Manager with Addons
 
