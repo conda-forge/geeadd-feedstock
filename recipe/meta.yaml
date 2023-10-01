@@ -1,5 +1,5 @@
 {% set name = "geeadd" %}
-{% set version = "1.0.0" %}
+{% set version = "1.0.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: a116912f07f329fcccbea49ed98294cc3838a214a3f74e53cbbac760fe56f9ec
+  sha256: f56c17f45a8b34db38fb41584c52d652ebe505ed6bdb2741da9b474b28451787
 
 build:
   number: 0
