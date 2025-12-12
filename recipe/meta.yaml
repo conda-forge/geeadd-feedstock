@@ -10,7 +10,7 @@ source:
   sha256: 9d05a11c75462a51c2a0649948e888c9b26e800efdb5325f90d7bfa3a4eac4bb
 
 build:
-  number: 0
+  number: 1
   entry_points:
     - geeadd=geeadd.geeadd:main
   noarch: python
@@ -19,16 +19,18 @@ build:
 requirements:
   host:
     - pip
-    - python >3.5
+    - python {{ python_min }}
 
   run:
     - beautifulsoup4 >=4.9.0
     - earthengine-api >=0.1.217
     - logzero >=1.5.0
     - requests >=2.22.0
-    - python >3.5
+    - python >={{ python_min }}
 
 test:
+  requires:
+    - python {{ python_min }}
   imports:
     - geeadd
   commands:
